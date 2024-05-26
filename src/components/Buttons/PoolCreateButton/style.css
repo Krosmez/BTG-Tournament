@@ -1,0 +1,15 @@
+.pool-create-button {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    transition: .3s all ease-in-out;
+}
+
+.pool-create-button svg {
+    fill: var(--color-secondary);
+}
+
+.pool-create-button:hover {
+    background-color: var(--color-primary-filter);
+}

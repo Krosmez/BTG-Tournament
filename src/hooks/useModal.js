@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import GlobalContext from "../components/contexts/GlobalContext";
+import GlobalContext from "../contexts/GlobalContext";
 
 const useModal = () => {
   const { dispatch } = useContext(GlobalContext);

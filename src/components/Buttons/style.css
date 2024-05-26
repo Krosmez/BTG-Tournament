@@ -1,0 +1,14 @@
+.btn {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: var(--small-br);
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.btn svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.5rem;
+}
