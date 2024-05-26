@@ -1,5 +1,5 @@
+import "../button-styles.css";
 import "./style.css";
-import "../style.css";
 
 const PoolCreateButton = ({ Icon, onClick }) => {
   return (

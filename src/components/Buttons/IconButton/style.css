@@ -1,0 +1,22 @@
+.icon-button {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--color-primary);
+    transition: .3s all ease-in-out;
+}
+
+.icon-button svg {
+    fill: var(--color-secondary);
+    margin-left: unset;
+}
+
+.icon-button svg {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-secondary);
+}
+
+.icon-button:hover {
+    background-color: var(--color-primary-filter);
+}
