@@ -1,4 +1,6 @@
 :root {
   --color-primary: #121319;
+  --color-primary-filter: #4E4F5B;
   --color-secondary: white;
+  --small-br: 4px;
 }
