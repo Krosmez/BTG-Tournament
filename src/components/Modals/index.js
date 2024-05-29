@@ -2,11 +2,11 @@ import "./modal-styles.css";
 
 import { useCallback, useEffect } from "react";
 
-import IconButton from "../Buttons/IconButton";
+import Button from "../Buttons/BaseButton";
 import useModal from "../../hooks/useModal";
 import { ReactComponent as CloseIcon } from "../../assets/svg/cross.svg";
 
-const ModalBase = ({ children, modalTitle }) => {
+const ModalBase = ({ children, modalTitle, className }) => {
   const { closeModal } = useModal();
 
   const handleEscKey = useCallback((event) => {
@@ -21,12 +21,12 @@ const ModalBase = ({ children, modalTitle }) => {
   }, []);
 
   return (
-    <div className={`modal-overlay`}>
+    <div className={`modal-overlay ${className && className}`}>
       <div className="modal-container">
         <div className={`modal`}>
           <div className={`modal-header`}>
             {modalTitle && <h2 className="modal-heading">{modalTitle}</h2>}
-            <IconButton onClick={closeModal} Icon={CloseIcon} />
+            <Button onClick={closeModal} Icon={CloseIcon} />
           </div>
           <div className="modal-body">{children}</div>
         </div>
