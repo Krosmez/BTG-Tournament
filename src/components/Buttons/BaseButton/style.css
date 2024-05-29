@@ -1,0 +1,39 @@
+/* GENERAL BUTTON STYLES */
+.btn {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: var(--small-br);
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.btn svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 1rem;
+}
+
+/* ICON BUTTON STYLES */
+.icon-button {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--color-primary);
+    transition: .3s all ease-in-out;
+}
+
+.icon-button svg {
+    fill: var(--color-secondary);
+    margin-left: unset;
+}
+
+.icon-button svg {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-secondary);
+}
+
+.icon-button:hover {
+    background-color: var(--color-primary-filter);
+}
