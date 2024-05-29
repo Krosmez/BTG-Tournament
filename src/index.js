@@ -1,20 +1,13 @@
-import "./index.css";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-import App from "./App";
-import Modals from "./layouts/Modals";
-import reportWebVitals from "./reportWebVitals";
-import { GlobalContextProvider } from "./contexts/GlobalContext";
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GlobalContextProvider>
-      <Modals />
-      <App />
-    </GlobalContextProvider>
+    <App />
   </React.StrictMode>
 );
 
