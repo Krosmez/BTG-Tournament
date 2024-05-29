@@ -1,11 +1,15 @@
-import "../button-styles.css";
 import "./style.css";
+
+import Button from "../BaseButton";
 
 const PoolCreateButton = ({ Icon, onClick }) => {
   return (
-    <button className="pool-create-button btn" onClick={onClick}>
-      Créer une pool {Icon && <Icon />}
-    </button>
+    <Button
+      text="Créer une pool"
+      className="pool-create-button"
+      onClick={onClick}
+      Icon={Icon}
+    />
   );
 };
 
