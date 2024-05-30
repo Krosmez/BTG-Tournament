@@ -1,0 +1,14 @@
+.round-robin-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.round {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.match {
+    margin-bottom: 1rem;
+}

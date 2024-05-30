@@ -1,7 +1,7 @@
 const useStorage = () => {
   const getItem = (key) => {
     if (localStorage.getItem(key) === null) {
-      console.error("This key doesn't exist");
+      console.warn("This key doesn't exist");
       return null;
     }
     return JSON.parse(localStorage.getItem(key));
